@@ -18,10 +18,16 @@ A low-cost IoT fall detection solution designed for elderly users. Built on the 
 
 This report evaluates and optimizes a Go-implemented gRPC edge gateway designed for a high-frequency telemetry scenario involving 16 edge devices across a 32-kilometer railway monitoring network. Through techniques such as traffic prioritization, compact Protobuf data structures, and `sync.Pool` object pooling, the throughput of the Optimized-Unary mode was increased by approximately 2.14x, while the average and P95 latencies were reduced by about 50% and 56%, respectively. This work provides a practical reference for large-scale, safety-critical railway IoT deployments.
 
+### 4. [Hierarchical IPTC Topic Classification (internship report, draft)](Hierarchical_IPTC_Topic_Classification_with_EuroBERT_and_HGCLR.pdf)
+
+**Hierarchical IPTC Topic Classification of French Press Articles with EuroBERT and Hierarchy-Guided Contrastive Learning** Author: Zehua Huang · Oct 2026 · draft
+
+Internship report at Abstrakt. A EuroBERT encoder tags press articles with the topics of the three-level IPTC Media Topics tree. The model rebuilds HGCLR on EuroBERT, adds article-to-topic attention, attention pooling and the asymmetric loss, and keeps its predictions coherent with avg-max, a variant of the C-HMCNN max rule. Trained on LLM-generated articles and tested on real French press.
+
 
 # report
 
-本仓库收录三篇技术报告，涵盖分布式光纤传感、物联网跌倒检测与铁路边缘网关性能优化等方向。
+本仓库收录四篇技术报告，涵盖分布式光纤传感、物联网跌倒检测与铁路边缘网关性能优化等方向。
 
 ## 文章列表
 
@@ -45,3 +51,10 @@ This report evaluates and optimizes a Go-implemented gRPC edge gateway designed 
 作者：Zehua Huang · 2026.03
 
 针对 32 公里铁路监测网络中 16 台边缘设备的高频遥测场景，评估并优化 Go 实现的 gRPC 边缘网关。通过流量分级、紧凑 Protobuf 数据结构与 `sync.Pool` 对象池等手段，将 Optimized-Unary 模式吞吐量提升约 2.14 倍，平均与 P95 延迟各降低约 50% 与 56%，为大规模、安全关键的铁路 IoT 部署提供参考。
+
+### 4. [层级 IPTC 主题分类（实习报告，草稿）](Hierarchical_IPTC_Topic_Classification_with_EuroBERT_and_HGCLR.pdf)
+
+**Hierarchical IPTC Topic Classification of French Press Articles with EuroBERT and Hierarchy-Guided Contrastive Learning**  
+作者：Zehua Huang · 2026.10 · 草稿
+
+Abstrakt 实习报告。基于 EuroBERT 编码器，为新闻文章标注 IPTC Media Topics 三层主题树中的主题。在 EuroBERT 上重建 HGCLR，加入文章-主题注意力、注意力池化与非对称损失（ASL），并以 C-HMCNN 最大值规则的变体 avg-max 保证预测的层级一致性。模型在 LLM 生成的文章上训练，在真实法语新闻上测试。
