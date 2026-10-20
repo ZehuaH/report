@@ -27,7 +27,7 @@ Internship report at Abstrakt. A EuroBERT encoder tags press articles with the t
 
 # report
 
-本仓库收录四篇技术报告，涵盖分布式光纤传感、物联网跌倒检测与铁路边缘网关性能优化等方向。
+本仓库收录四篇技术报告，涵盖分布式光纤传感、物联网跌倒检测、铁路边缘网关性能优化与新闻层级主题分类等方向。
 
 ## 文章列表
 
